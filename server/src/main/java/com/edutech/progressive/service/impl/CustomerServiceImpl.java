@@ -7,7 +7,7 @@ import com.edutech.progressive.dao.CustomerDAO;
 import com.edutech.progressive.entity.Customers;
 import com.edutech.progressive.service.CustomerService;
 
-public class CustomerServiceImpl implements CustomerService{
+public class CustomerServiceImpl implements CustomerService {
 private CustomerDAO customerDAO;
 
 public CustomerServiceImpl(CustomerDAO customerDAO) {
@@ -16,11 +16,11 @@ public CustomerServiceImpl(CustomerDAO customerDAO) {
 public List<Customers>getAllCustomers()throws SQLException{
     return null;
 }
-@Override
+
 public int addCustomer(Customers customers) throws SQLException {
    return -1;
 }
-@Override
+
 public List<Customers> getAllCustomersSortedByName() throws SQLException {
     return null;
 }
