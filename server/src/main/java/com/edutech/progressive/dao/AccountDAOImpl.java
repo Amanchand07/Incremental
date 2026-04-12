@@ -1,22 +1,16 @@
 package com.edutech.progressive.dao;
 
-<<<<<<< HEAD
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.edutech.progressive.config.DatabaseConnectionManager;
-=======
-import java.util.List;
-
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
 import com.edutech.progressive.entity.Accounts;
 
 public class AccountDAOImpl implements AccountDAO{
 
     @Override
-<<<<<<< HEAD
     public List<Accounts> getAllAccounts() throws SQLException {
         final String sql = "SELECT account_id, customer_id, balance FROM accounts";
         List<Accounts> result = new ArrayList<>();
@@ -156,35 +150,3 @@ public class AccountDAOImpl implements AccountDAO{
     }
 }
 
-=======
-    public int addAccount(Accounts accounts) {
-        return -1;
-    }
-
-    @Override
-    public Accounts getAccountById(int accountId) {
-        return null;
-    }
-
-    @Override
-    public void updateAccount(Accounts accounts) {
-        
-    }
-
-    @Override
-    public void deleteAccount(int accountId) {
-       
-    }
-
-    @Override
-    public List<Accounts> getAllAccounts() {
-        return null;
-    }
-
-    @Override
-    public List<Accounts> getAllAccountsByCustomer(int customer_id) {
-        return null;
-    }
-
-}
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed

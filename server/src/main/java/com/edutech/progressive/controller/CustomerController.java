@@ -8,11 +8,7 @@ import com.edutech.progressive.entity.Customers;
 import com.edutech.progressive.entity.Transactions;
 
 import java.util.List;
-<<<<<<< HEAD
 @RestController
-=======
-
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
 public class CustomerController {
 
     public ResponseEntity<List<Customers>> getAllCustomers() {

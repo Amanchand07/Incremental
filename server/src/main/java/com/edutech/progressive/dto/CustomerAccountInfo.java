@@ -2,16 +2,11 @@ package com.edutech.progressive.dto;
 
 public class CustomerAccountInfo {
 
-<<<<<<< HEAD
      private int customerId;
-=======
-    private int customerId;
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
     private String customerName;
     private String email;
     private int accountId;
     private double balance;
-<<<<<<< HEAD
 
     public CustomerAccountInfo() {}
 
@@ -48,6 +43,4 @@ public class CustomerAccountInfo {
                 ", balance=" + balance +
                 '}';
     }
-=======
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
 }

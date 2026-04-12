@@ -1,6 +1,5 @@
 package com.edutech.progressive.dao;
 
-<<<<<<< HEAD
 import java.sql.Connection;
 import java.math.BigDecimal;
 import java.sql.*;
@@ -160,39 +159,3 @@ public class TransactionDAOImpl implements TransactionDAO{
 }
 
 
-=======
-import java.util.List;
-
-import com.edutech.progressive.entity.Transactions;
-
-public class TransactionDAOImpl implements TransactionDAO {
-
-    @Override
-    public int addTransaction(Transactions transaction) {
-        return -1;
-    }
-
-    @Override
-    public Transactions getTransactionById(int transactionId) {
-        return null;
-    }
-
-    @Override
-    public void updateTransaction(Transactions transaction) {
-        
-    }
-
-    @Override
-    public void deleteTransaction(int transactionId) {
-        
-    }
-
-    @Override
-    public List<Transactions> getAllTransactions() {
-        return null;
-    }
-
-
-
-}
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed

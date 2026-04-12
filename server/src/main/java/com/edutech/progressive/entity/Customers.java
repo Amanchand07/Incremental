@@ -1,26 +1,15 @@
 package com.edutech.progressive.entity;
 
-<<<<<<< HEAD
 public class Customers implements Comparable<Customers> {
  private int customerId;
-=======
-public class Customers implements Comparable<Customers>{
-    private int customerId;
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
     private String name;
     private String email;
     private String username;
     private String password;
-<<<<<<< HEAD
     private String role; // may be null in MS2
 
     public Customers() {}
 
-=======
-    private String role;
-    public Customers() {
-    }
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
     public Customers(int customerId, String name, String email, String username, String password) {
         this.customerId = customerId;
         this.name = name;
@@ -28,7 +17,6 @@ public class Customers implements Comparable<Customers>{
         this.username = username;
         this.password = password;
     }
-<<<<<<< HEAD
 
     public Customers(int customerId, String name, String email, String username, String password, String role) {
         this.customerId = customerId;
@@ -68,48 +56,3 @@ public class Customers implements Comparable<Customers>{
         return n1.compareToIgnoreCase(n2);
     }
 }
-=======
-    public int getCustomerId() {
-        return customerId;
-    }
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public String getUsername() {
-        return username;
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    public String getRole() {
-        return role;
-    }
-    public void setRole(String role) {
-        this.role = role;
-    }
-    @Override
-    public int compareTo(Customers otherCustomers) {
-        return this.name.compareTo(otherCustomers.name);
-    }
-    
-
-}
->>>>>>> 4ad7f7787f9274cdee49cd80d201c9696bc4d6ed
