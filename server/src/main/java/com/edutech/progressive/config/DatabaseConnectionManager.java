@@ -48,7 +48,7 @@ public class DatabaseConnectionManager {
                 }
             }
 
-            // Merge with System properties / Env if present (highest priority on read below)
+            
             initialized = true;
         }
     }
