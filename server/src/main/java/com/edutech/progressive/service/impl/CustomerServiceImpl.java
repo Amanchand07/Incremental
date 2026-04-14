@@ -1,15 +1,16 @@
 package com.edutech.progressive.service.impl;
 
-import java.sql.SQLException;
-import java.util.Collections;
-import java.util.List;
-
 import com.edutech.progressive.dao.CustomerDAO;
 import com.edutech.progressive.entity.Customers;
 import com.edutech.progressive.service.CustomerService;
 
-public class CustomerServiceImpl implements CustomerService{
-private final CustomerDAO customerDAO;
+import java.sql.SQLException;
+import java.util.Collections;
+import java.util.List;
+
+public class CustomerServiceImpl implements CustomerService {
+
+    private final CustomerDAO customerDAO;
 
     public CustomerServiceImpl(CustomerDAO customerDAO) {
         this.customerDAO = customerDAO;

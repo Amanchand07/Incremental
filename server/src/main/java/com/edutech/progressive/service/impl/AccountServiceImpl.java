@@ -1,15 +1,17 @@
 package com.edutech.progressive.service.impl;
 
-import java.sql.SQLException;
-import java.util.Comparator;
-import java.util.List;
 
 import com.edutech.progressive.dao.AccountDAO;
 import com.edutech.progressive.entity.Accounts;
 import com.edutech.progressive.service.AccountService;
 
-public class AccountServiceImpl  implements AccountService{
-private final AccountDAO accountDAO;
+import java.sql.SQLException;
+import java.util.Comparator;
+import java.util.List;
+
+public class AccountServiceImpl implements AccountService {
+
+    private final AccountDAO accountDAO;
 
     public AccountServiceImpl(AccountDAO accountDAO) {
         this.accountDAO = accountDAO;
