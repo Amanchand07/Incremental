@@ -6,6 +6,7 @@ import com.edutech.progressive.service.impl.CustomerServiceImplJpa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
@@ -46,6 +47,7 @@ public class CustomerController {
     }
 
     @PostMapping
+    @PreAuthorize("hasAuthority('ADMIN') or hasRole('ADMIN')")
     public ResponseEntity<?> addCustomer(@RequestBody Customers customers) {
         try {
             int customerId = customerServiceJpa.addCustomer(customers);

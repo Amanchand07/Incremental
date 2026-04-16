@@ -8,6 +8,7 @@ import com.edutech.progressive.service.impl.AccountServiceImplJpa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
@@ -78,6 +79,7 @@ public class AccountController {
     }
 
     @DeleteMapping("/{accountId}")
+    @PreAuthorize("hasAuthority('ADMIN') or hasRole('ADMIN')")
     public ResponseEntity<Void> deleteAccount(@PathVariable int accountId) {
         try {
             accountServiceImplJpa.deleteAccount(accountId);
