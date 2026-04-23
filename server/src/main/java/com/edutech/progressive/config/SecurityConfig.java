@@ -31,7 +31,7 @@ public class SecurityConfig {
 
         http.csrf().disable()
             .authorizeRequests()
-            // ⭐ Day‑12 tests require full access (no JWT)
+            
             .antMatchers("/**").permitAll()
             .anyRequest().authenticated();
 

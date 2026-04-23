@@ -12,7 +12,7 @@ public interface CustomerService {
     List<Customers> getAllCustomersSortedByName() throws SQLException;
     default public void emptyArrayList() {}
 
-    //Do not implement these methods in CustomerServiceImplArraylist.java class
+    
     default void updateCustomer(Customers customers) throws SQLException {}
     default void deleteCustomer(int customerId) throws SQLException {}
     default Customers getCustomerById(int customerId) throws SQLException {

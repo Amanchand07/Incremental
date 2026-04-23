@@ -14,10 +14,10 @@ public class BankSafeApplication {
 
     public static void main(String[] args) {
         new SpringApplicationBuilder(BankSafeApplication.class)
-                .web(WebApplicationType.NONE)   // ✅ IMPORTANT
+                .web(WebApplicationType.NONE)  
                 .run(args);
 
-        // Keep the same message you already had (your Day 4 test passed with this)
+        
         System.out.println("Welcome to BankSafe Project!");
         SpringApplication.run(BankSafeApplication.class, args);
     }

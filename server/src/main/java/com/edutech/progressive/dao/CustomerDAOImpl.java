@@ -41,7 +41,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();
@@ -74,7 +74,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();
@@ -105,7 +105,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();
@@ -131,7 +131,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
             if (connection != null) {
                 connection.close();
@@ -152,9 +152,9 @@ public class CustomerDAOImpl implements CustomerDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
-            // Close resources in the reverse order of opening
+            
             if (statement != null) {
                 statement.close();
             }
@@ -191,9 +191,9 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; // Rethrow the exception
+            throw e; 
         } finally {
-            // Close resources in the reverse order of opening
+            
             if (resultSet != null) {
                 resultSet.close();
             }

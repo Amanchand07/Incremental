@@ -18,7 +18,7 @@ public interface AccountService {
     default public void emptyArrayList() {
     }
 
-    //Do not implement these methods in AccountServiceImplArraylist.java class
+    
     default List<Accounts> getAccountsByUser(int userId) throws SQLException {
         return List.of();
     }

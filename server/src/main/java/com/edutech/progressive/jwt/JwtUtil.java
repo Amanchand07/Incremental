@@ -31,7 +31,7 @@ public class JwtUtil {
         Customers c = customerRepository.findByUsername(username);
 
         return Jwts.builder()
-                .setSubject(username)  // ⭐ FIXED
+                .setSubject(username) 
                 .claim("role", c != null ? c.getRole() : "USER")
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expirationMs))

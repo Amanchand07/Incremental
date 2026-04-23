@@ -12,16 +12,9 @@ public class DatabaseConnectionManager {
     private static volatile boolean initialized = false;
 
     private DatabaseConnectionManager() {
-        // utility class
+        
     }
 
-    /**
-     * Load properties from classpath:
-     *  - application.properties
-     *  - config/application.properties
-     * (Tests place their own application.properties under test resources,
-     *  which is on the classpath, so this works during mvn test.)
-     */
     private static void loadProperties() {
         if (initialized) return;
 
@@ -44,7 +37,7 @@ public class DatabaseConnectionManager {
                         break;
                     }
                 } catch (IOException ignored) {
-                    // try next candidate
+                    
                 }
             }
 
@@ -67,15 +60,15 @@ public class DatabaseConnectionManager {
         loadProperties();
 
         String url = firstNonBlank(
-            // properties
+            
             PROPS.getProperty("db.url"),
             PROPS.getProperty("jdbc.url"),
             PROPS.getProperty("spring.datasource.url"),
-            // system properties (-D...)
+            
             System.getProperty("db.url"),
             System.getProperty("jdbc.url"),
             System.getProperty("spring.datasource.url"),
-            // env
+            
             System.getenv("DB_URL"),
             System.getenv("JDBC_URL"),
             System.getenv("SPRING_DATASOURCE_URL")
@@ -106,12 +99,11 @@ public class DatabaseConnectionManager {
         );
 
         if (url == null || url.isEmpty()) {
-            // This message matches what your tests report
+            
             throw new SQLException("The url cannot be null");
         }
 
-        // Many drivers accept getConnection(url) with no user/pass (e.g., H2),
-        // but if provided we pass them through.
+        
         if (username == null && password == null) {
             return DriverManager.getConnection(url);
         } else {
