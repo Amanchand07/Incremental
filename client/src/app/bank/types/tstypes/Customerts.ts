@@ -1,5 +1,5 @@
-export class Customerts {
-// export class CustomerTS {
+// export class Customerts {
+export class CustomerTS {
     customerId?: string;
     name: string;
     email: string;

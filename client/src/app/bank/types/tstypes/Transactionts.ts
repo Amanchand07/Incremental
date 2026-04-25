@@ -1,5 +1,5 @@
-export class Transactionts {
-// export class TransactionTS {
+// export class Transactionts {
+export class TransactionTS {
     transactionId?: number;
     accountId: string;
     amount: number;
