@@ -14,7 +14,7 @@ import { CustomerTS } from '../../types/tstypes/Customerts';
 export class CustomersampleComponent {
   customer: CustomerTS;
   constructor() {
-    this.customer = new CustomerTS("Srinivas Sobhit Kintali", "srinivassobhit@gmail.com", "sobhit03", "1234567890", "USER", "101");
+    this.customer = new CustomerTS("Aman Chand", "amanchand@gmail.com", "aman03", "1234567890", "USER", "101");
   }
 }
 
