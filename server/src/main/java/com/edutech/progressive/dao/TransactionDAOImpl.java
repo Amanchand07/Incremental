@@ -128,7 +128,7 @@ public class TransactionDAOImpl implements TransactionDAO{
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();
@@ -149,7 +149,7 @@ public class TransactionDAOImpl implements TransactionDAO{
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();

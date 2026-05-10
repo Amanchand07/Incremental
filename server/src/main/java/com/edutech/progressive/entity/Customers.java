@@ -29,7 +29,7 @@ public class Customers implements Comparable<Customers> {
         this.password = password;
     }
 
-    
+    // Getters and setters
     public int getCustomerId() {
         return customerId;
     }
@@ -79,7 +79,7 @@ public class Customers implements Comparable<Customers> {
 
     @Override
     public int compareTo(Customers otherCustomers) {
-        
+        // Implement comparison logic based on customer name
         return this.getName().compareTo(otherCustomers.getName());
     }
 }

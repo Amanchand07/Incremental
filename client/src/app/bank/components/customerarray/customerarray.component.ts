@@ -1,6 +1,3 @@
-//import { CustomerTS } from "../../types/tstypes/Customerts";
-
-// "Aman Chand", "amanchand@gmail.com", "aman03", "1234567890", "USER", "101"
 import { Component } from '@angular/core';
 // import { Customer } from '../bank/types/Customer';
 import { CustomerTS } from '../../types/tstypes/Customerts';

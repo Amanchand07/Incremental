@@ -35,7 +35,7 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e;
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();
@@ -67,7 +67,7 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();
@@ -97,9 +97,9 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
-            
+            // Close resources in the reverse order of opening
             if (connection != null) {
                 connection.close();
             }
@@ -128,7 +128,7 @@ public class AccountDAOImpl implements AccountDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();
@@ -154,7 +154,7 @@ public class AccountDAOImpl implements AccountDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();
@@ -175,7 +175,7 @@ public class AccountDAOImpl implements AccountDAO {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw e; 
+            throw e; // Rethrow the exception
         } finally {
             if (connection != null) {
                 connection.close();
